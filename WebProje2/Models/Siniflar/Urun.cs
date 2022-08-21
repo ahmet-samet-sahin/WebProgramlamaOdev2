@@ -30,7 +30,7 @@ namespace WebProje2.Models.Siniflar
         [StringLength(250)]
         public string UrunGorsel { get; set; }
         public int Kategoriid { get; set; }
-        public virtual Kategori Kategori { get; set; }
+        public virtual Kategori? Kategori { get; set; }
         public ICollection<SatisHareket> SatisHarekets { get; set; }
 
 

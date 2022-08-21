@@ -1,4 +1,3 @@
-D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.csproj.AssemblyReference.cache
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.GeneratedMSBuildEditorConfig.editorconfig
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.AssemblyInfoInputs.cache
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.AssemblyInfo.cs
@@ -226,3 +225,5 @@ D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\ref\WebProje2.dll
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.pdb
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.genruntimeconfig.cache
+D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\bin\Debug\net5.0\web.config
+D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\WebProje2.csproj.AssemblyReference.cache

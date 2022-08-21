@@ -38,12 +38,8 @@
     @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.ktg1, new { @class = "form-control" })
     @*//@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })*@
     <br />
-    <br />
     <p>Ürün Görseli</p>
     @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
-    <br />
-    <p>Ürün Durumu</p>
-    @Html.TextBoxFor(x => x.Durum, new { @class = "form-control" })
     <br />
     <button class="btn btn-primary">Ürünü Kaydet</button>
 </form>

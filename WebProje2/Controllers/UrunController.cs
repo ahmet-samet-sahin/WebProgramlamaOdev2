@@ -38,10 +38,12 @@ namespace WebProje2.Controllers
         [HttpPost]
         public ActionResult YeniUrun(Urun p)
         {
-            if (!ModelState.IsValid)
-            {
-                return View("YeniUrun");
-            }
+
+            //if (!ModelState.IsValid)
+            //{
+            //    return View("YeniUrun");
+            //}
+            p.Durum = true;
             try
             {
                 c.Uruns.Add(p);
@@ -95,7 +97,7 @@ namespace WebProje2.Controllers
             {
                 var urn = c.Uruns.Find(p.UrunID);
                 urn.AlisFiyat = p.AlisFiyat;
-                urn.Durum = p.Durum;
+                urn.Durum =true;
                 urn.Kategoriid = p.Kategoriid;
                 urn.Marka = p.Marka;
                 urn.SatisFiyat = p.SatisFiyat;
