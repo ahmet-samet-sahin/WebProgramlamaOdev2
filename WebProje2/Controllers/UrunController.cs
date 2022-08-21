@@ -39,10 +39,10 @@ namespace WebProje2.Controllers
         public ActionResult YeniUrun(Urun p)
         {
 
-            //if (!ModelState.IsValid)
-            //{
-            //    return View("YeniUrun");
-            //}
+            if (!ModelState.IsValid)
+            {
+                return View("YeniUrun");
+            }
             p.Durum = true;
             try
             {

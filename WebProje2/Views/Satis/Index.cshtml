@@ -13,7 +13,6 @@
 <table id="tbl1" class="table table-bordered" style="margin-top:20px">
     <thead>
         <tr>
-            <th>Satış ID</th>
             <th>Ürün Adı</th>
             <th>Ürün Markası</th>
             <th>Cari (Müşteri)</th>
@@ -29,10 +28,6 @@
     @foreach (var k in Model)
     {
         <tr>
-            <td>
-                @k.Satisid
-            </td>
-
             <td>
                 @k.Urun.UrunAd
             </td>

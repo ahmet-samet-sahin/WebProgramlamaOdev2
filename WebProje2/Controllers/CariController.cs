@@ -26,12 +26,9 @@ namespace WebProje2.Controllers
         [HttpPost]
         public ActionResult YeniCari(Cariler p)
         {
-            if (!ModelState.IsValid)
-            {
-                return View("YeniCari");
-            }
             try
             {
+                p.Dil = "Türkçe";
                 p.Durum = true;
                 c.Carilers.Add(p);
                 c.SaveChanges();
@@ -69,10 +66,6 @@ namespace WebProje2.Controllers
         }
         public ActionResult CariGuncelle(Cariler p)
         {
-            if (!ModelState.IsValid)
-            {
-                return View("CariGetir");
-            }
             try
             {
                 var cari = c.Carilers.Find(p.CarilerID);

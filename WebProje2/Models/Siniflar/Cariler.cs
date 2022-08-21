@@ -36,7 +36,7 @@ namespace WebProje2.Models.Siniflar
         [StringLength(9, ErrorMessage = "Dil en fazla 9 karakter uzunluğunda olabilir.")]
         [Required(ErrorMessage = "Dil alanı boş geçilemez !")]
         [DefaultValue("Türkçe")]
-        public string Dil { get; set; }
+        public string? Dil { get; set; }
         public bool Durum { get; set; }
         public ICollection<SatisHareket> SatisHarekets { get; set; }
 

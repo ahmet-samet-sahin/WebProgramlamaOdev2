@@ -25,17 +25,27 @@
     @Html.DropDownListFor(x => x.Personelid, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
     <br />
     <p>Ürün Adedi</p>
-    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Adet, new { @class = "form-control", @id = "txt1"})
     <br />
     <p>Birim Fiyatı</p>
-    @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control", @id = "txt2", @onkeyup = "sum();" })
     <br />
     <p>Toplam Tutar</p>
-    @Html.TextBoxFor(x => x.ToplamTutar, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.ToplamTutar, new { @class = "form-control", @id = "txt3" })
     <br />
     <p>Satış Tarihi</p>
     @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
     <br />
     <button class="btn btn-warning">Satış Bilgilerini Güncelle</button>
 }
+<script>
+    function sum() {
+        var sayi1 = document.getElementById('txt1').value;
+        var sayi2 = document.getElementById('txt2').value;
+        var sonuc = parseInt(sayi1) * parseInt(sayi2);
+        if (!isNaN(sonuc)) {
+            document.getElementById('txt3').value = sonuc;
+        }
+    }
+</script>
 
