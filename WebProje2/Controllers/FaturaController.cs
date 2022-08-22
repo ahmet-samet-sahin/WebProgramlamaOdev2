@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,7 @@ namespace WebProje2.Controllers
         public ActionResult FaturaGetir(int id)
         {
             var fatura = c.Faturalars.Find(id);
+            TempData["Date"] = fatura.Tarih;
             return View("FaturaGetir", fatura);
         }
         public ActionResult FaturaGuncelle (Faturalar f)

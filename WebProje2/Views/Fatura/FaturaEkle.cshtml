@@ -17,10 +17,10 @@
     @Html.TextBoxFor(x => x.VergiDairesi, new { @class = "form-control" })
     <br />
     <p style="color:green">İşlem Tarihi </p>
-    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control",@type="date"})
     <br />
     <p style="color:green">İşlem Saati</p>
-    @Html.TextBoxFor(x => x.Saat, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Saat, new { @class = "form-control", @type="time"})
     <br />
     <p style="color:green">Teslim Eden</p>
     @Html.TextBoxFor(x => x.TeslimEden, new { @class = "form-control" })

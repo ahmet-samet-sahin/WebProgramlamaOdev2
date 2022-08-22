@@ -53,10 +53,24 @@ namespace WebProje2.Controllers
         [HttpPost]
         public ActionResult YeniSatis(SatisHareket s)
         {
-            c.SatisHarekets.Add(s);
-            s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
-            c.SaveChanges();
-            return RedirectToAction("Index");
+            var urun = c.Uruns.Include(x => x.Kategori).Where(x => x.Durum == true && x.UrunID==s.Urunid).ToList();
+            if(urun[0].Stok<s.Adet)
+            {
+                TempData["SaleError"] = "Ürünün yeterli stoğu bulunmamaktadır. Satış işlemi yapılmamıştır.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                urun[0].Stok -= Convert.ToInt16(s.Adet);
+                Urun yeniUrun = new Urun();
+                yeniUrun = urun[0];
+                c.Uruns.Update(yeniUrun);
+                c.SatisHarekets.Add(s);
+                s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+                c.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            
         }
         public ActionResult SatisGetir(int id)
         {

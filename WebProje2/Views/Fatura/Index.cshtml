@@ -11,7 +11,6 @@
 <br />
 <table class="table table-bordered" style="margin-top:20px">
     <tr>
-        <th>Fatura ID</th>
         <th>Fatura Seri-Sıra No</th>
         <th>Vergi Dairesi</th>
         <th>Fatura Tarihi</th>
@@ -25,9 +24,6 @@
     @foreach (var k in Model)
     { 
         <tr>
-            <td>
-                @k.Faturalarid
-            </td>
             <td>
                 @k.FaturaSeriNo@k.FaturaSiraNo
             </td>
