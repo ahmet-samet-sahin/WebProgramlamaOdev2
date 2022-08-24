@@ -32,11 +32,11 @@
 <table class="table table-bordered">
     <tr>
         <th>Ürün Adı</th>
+        <th>Ürün Kategorisi</th>
         <th>Ürün Markası</th>
         <th>Stok Sayısı</th>
         <th>Alış Fiyatı</th>
         <th>Satış Fiyatı</th>
-        <th>Kategori</th>
         <th>Ürün Görseli</th>
         <th>Ürünü Sil</th>
         <th>Ürünü Güncelle</th>
@@ -46,11 +46,11 @@
     {
         <tr>
             <td>@urun.UrunAd</td>
+            <td>@urun.Kategori.KategoriAd</td>
             <td>@urun.Marka</td>
             <td>@urun.Stok</td>
             <td>@urun.AlisFiyat ₺</td>
             <td>@urun.SatisFiyat ₺</td>
-            <td>@urun.Kategori.KategoriAd</td>
             <td><img src="@urun.UrunGorsel" style="width:100px;height:100px;" /></td>
             <td>
                 <a href="/Urun/UrunSil/@urun.UrunID" class="btn btn-danger">Sil</a>

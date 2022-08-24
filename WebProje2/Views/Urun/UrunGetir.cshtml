@@ -15,6 +15,9 @@
     @Html.TextBoxFor(x => x.UrunAd, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.UrunAd, "", new { @style = "color:red" })
     <br />
+    <p>Ürün Kategorisi</p>
+    @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.ktg1, new { @class = "form-control" })
+    <br />
     <p>Ürün Markası</p>
     @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
     <br />
@@ -26,10 +29,6 @@
     <br />
     <p>Satış Fiyatı</p>
     @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
-    <br />
-    <p>Kategori</p>
-    @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.ktg1, new { @class = "form-control" })
-    @*//@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })*@
     <br />
     <p>Ürün Görseli</p>
     @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
