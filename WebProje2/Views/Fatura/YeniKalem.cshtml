@@ -11,17 +11,26 @@
     @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
     <br />
     <p style="color:green">Miktar </p>
-    @Html.TextBoxFor(x => x.Miktar, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Miktar, new { @class = "form-control", @id = "txt1" })
     <br />
     <p style="color:green">Birim Fiyat </p>
-    @Html.TextBoxFor(x => x.BirimFiyat, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.BirimFiyat, new { @class = "form-control", @id = "txt2", @onkeyup = "sum();" })
     <br />
     <p style="color:green">Toplam Tutar </p>
-    @Html.TextBoxFor(x => x.Tutar, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Tutar, new { @class = "form-control", @id = "txt3" })
     <br />
-    <p style="color:green">Fatura ID</p>
-    @Html.TextBoxFor(x => x.Faturalarid, new { @class = "form-control" })
-    <br />
+    @Html.TextBoxFor(x => x.Faturalarid, new { @class = "form-control"})
     <button class="btn btn-info">Fatura Ekle</button>
 </form>
+
+<script>
+    function sum() {
+        var sayi1 = document.getElementById('txt1').value;
+        var sayi2 = document.getElementById('txt2').value;
+        var sonuc = parseInt(sayi1) * parseInt(sayi2);
+        if (!isNaN(sonuc)) {
+            document.getElementById('txt3').value = sonuc;
+        }
+    }
+</script>
  

@@ -14,7 +14,6 @@
 <br />
 <table class="table table-hover">
     <tr>
-        <th>ID</th>
         <th>Açıklama</th>
         <th>Miktar</th>
         <th>Birim Fiyat</th>
@@ -23,7 +22,6 @@
     @foreach (var x in Model)
     {
         <tr>
-            <td>@x.FaturaKalemid</td>
             <td>@x.Aciklama</td>
             <td>@x.Miktar</td>
             <td>@x.BirimFiyat</td>
@@ -33,5 +31,7 @@
     }
 </table>
 <a href="/Fatura/YeniKalem/" class="btn btn-success">Faturaya Ürün Ekle</a>
+
+
 
 

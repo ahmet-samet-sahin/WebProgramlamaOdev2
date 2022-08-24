@@ -57,7 +57,7 @@ namespace WebProje2.Controllers
             return View(degerler);
         }
         [HttpGet]
-        public ActionResult YeniKalem()
+        public ActionResult YeniKalem(int id)
         {
             return View();
         }
