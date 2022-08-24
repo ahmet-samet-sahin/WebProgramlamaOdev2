@@ -213,30 +213,28 @@ namespace WebProje2.Controllers
             return View(degerler);
         }
         [Authorize]
-        public IActionResult KargoTakip(string search)
+        public IActionResult KargoTakip()
         {
-            var k = from x in c.KargoDetays select x;
-            k = k.Where(y => y.TakipKodu.Contains(search));
-            return View(k.ToList());
+            var degerler = c.KargoDetays.Where(x => x.Alici==User.Identity.Name).ToList();
+            return View(degerler);
         }
         [Authorize]
-        public IActionResult KargoTakipEN(string search)
+        public IActionResult KargoTakipEN()
         {
-            var k = from x in c.KargoDetays select x;
-            k = k.Where(y => y.TakipKodu.Contains(search));
-            return View(k.ToList());
+            var degerler = c.KargoDetays.Where(x => x.Alici == User.Identity.Name).ToList();
+            return View(degerler);
         }
         [Authorize]
         public ActionResult KargoDetay(string id)
         {
-            var degerler = c.KargoTakips.Where(x => x.TakipKodu == id).ToList();
+            var degerler = c.KargoDetays.Where(x => x.TakipKodu == id).ToList();
             ViewBag.takipkodu = id;
             return View(degerler);
         }
         [Authorize]
         public ActionResult KargoDetayEN(string id)
         {
-            var degerler = c.KargoTakips.Where(x => x.TakipKodu == id).ToList();
+            var degerler = c.KargoDetays.Where(x => x.TakipKodu == id).ToList();
             ViewBag.takipkodu = id;
             return View(degerler);
         }

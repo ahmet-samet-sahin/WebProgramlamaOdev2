@@ -207,7 +207,6 @@ D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\View
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Shared\_CariLayoutEN.cshtml.g.cs
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\UrunDetay\Index.cshtml.g.cs
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Urun\Index.cshtml.g.cs
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Urun\UrunGetir.cshtml.g.cs
 D:\Ders Notları\Deneme\WebProgramlamaOdev\WebProje2\obj\Debug\net5.0\Razor\Views\Urun\UrunListesi.cshtml.g.cs

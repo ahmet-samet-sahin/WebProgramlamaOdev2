@@ -49,7 +49,7 @@ namespace WebProje2.Controllers
         }
         public ActionResult KargoDetay(string id)
         {
-            var degerler = c.KargoTakips.Where(x => x.TakipKodu == id).ToList();
+            var degerler = c.KargoDetays.Where(x => x.TakipKodu == id).ToList();
             return View(degerler);
         }
     }
